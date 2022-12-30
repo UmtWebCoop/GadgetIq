@@ -42,7 +42,7 @@ footer ul li{
 }
 footer{
     background-color: rgb(151, 151, 151);
-    position: absolute;
+    position: relative;
     bottom: 0;
     right: 0;
     left: 0;
