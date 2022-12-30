@@ -1,0 +1,20 @@
+.laptop-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 30px;
+    column-gap: 20px;
+    row-gap: 40px;
+    background-color: white;
+}
+.laptop-2desc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+    row-gap: 0;
+}
+.laptop-desc{
+    background-color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-top: 2px solid black;
+}
