@@ -1,132 +1,169 @@
-<!DOCTYPE html>    
-<html>    
-<head>    
-<meta name="viewport" content="width=device-width, initial-scale=1">    
-<style>    
-* {    
-  box-sizing: border-box;    
-}    
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GadgetIQ Content</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="Style/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Style/feedback.css">
+    </head>
+    <body>
+    <style>* {    
+        box-sizing: border-box;    
+      }    
+          
+      input[type=text], select, textarea {    
+        width: 100%;    
+        padding: 12px;    
+        border: 1px solid rgb(70, 68, 68);    
+        border-radius: 4px;    
+        resize: vertical;    
+      }    
+      input[type=email], select, textarea {    
+        width: 100%;    
+        padding: 12px;    
+        border: 1px solid rgb(70, 68, 68);    
+        border-radius: 4px;    
+        resize: vertical;    
+      }    
+          
+      label {    
+        padding: 12px 12px 12px 0;    
+        display: inline-block;    
+      }    
+          
+      input[type=submit] {    
+        background-color: rgb(37, 116, 161);    
+        color: white;    
+        padding: 12px 20px;    
+        border: none;    
+        border-radius: 4px;    
+        cursor: pointer;    
+        float: right;    
+      }    
+          
+      input[type=submit]:hover {    
+        background-color: #45a049;    
+      }    
+          
+      .container {    
+        border-radius: 5px;    
+        background-color: #f2f2f2;    
+        padding: 20px;    
+      }    
+          
+      .col-25 {    
+        float: left;    
+        width: 25%;    
+        margin-top: 6px;    
+      }    
+          
+      .col-75 {    
+        float: left;    
+        width: 75%;    
+        margin-top: 6px;    
+      }    
+          
+      /* Clear floats after the columns */    
+      .row:after {    
+        content: "";    
+        display: table;    
+        clear: both;    
+      }   </style>
+        <!--header-->
     
-input[type=text], select, textarea {    
-  width: 100%;    
-  padding: 12px;    
-  border: 1px solid rgb(70, 68, 68);    
-  border-radius: 4px;    
-  resize: vertical;    
-}    
-input[type=email], select, textarea {    
-  width: 100%;    
-  padding: 12px;    
-  border: 1px solid rgb(70, 68, 68);    
-  border-radius: 4px;    
-  resize: vertical;    
-}    
+        <header>
+            <div class="px-3 py-2 text-bg-dark">
+                <div class="container">
+                    <div class="d-flex flex-row mb-3">
+                        <div class="p-2 d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"><img class="accordion accordion-header img-fluid rounded-circle" src="images/logo.png" alt="Logo" width="120px"></div>
+                        <div class="p-2"><h1 style="padding-left: 20px;font-family: 'Righteous', cursive;font-size: 60px;">GADGETIQUES</h1></div>
+                        <div class="p-2" style="text-align: center;"><a href="login.html"><p><b>Login</b></p></a><br><a href="registration.html"><p><b>Register</b></p></a></div>
+                      </div>
+                </div>
+            </div>
+        </header> 
     
-label {    
-  padding: 12px 12px 12px 0;    
-  display: inline-block;    
-}    
+        <!--NAvbar-->
     
-input[type=submit] {    
-  background-color: rgb(37, 116, 161);    
-  color: white;    
-  padding: 12px 20px;    
-  border: none;    
-  border-radius: 4px;    
-  cursor: pointer;    
-  float: right;    
-}    
-    
-input[type=submit]:hover {    
-  background-color: #45a049;    
-}    
-    
-.container {    
-  border-radius: 5px;    
-  background-color: #f2f2f2;    
-  padding: 20px;    
-}    
-    
-.col-25 {    
-  float: left;    
-  width: 25%;    
-  margin-top: 6px;    
-}    
-    
-.col-75 {    
-  float: left;    
-  width: 75%;    
-  margin-top: 6px;    
-}    
-    
-/* Clear floats after the columns */    
-.row:after {    
-  content: "";    
-  display: table;    
-  clear: both;    
-}    
-    
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */    
-</style>    
-</head>    
-<body>    
-<h2>FEED BACK FORM</h2>    
-<div class="container">    
-  <form>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="fname">First Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="lname">Last Name</label>    
-      </div>    
-      <div class="col-75">    
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
-      </div>    
-    </div>    
-    <div class="row">    
-        <div class="col-25">    
-          <label for="email">Mail Id</label>    
+        <nav class="nav nav-pills flex-column flex-sm-row" style="background-color: rgb(76, 111, 182);">
+            <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="index.html"><span class="material-symbols-outlined">
+                home
+                </span></a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="content.html">Content</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About</a>
+            <a class="flex-sm-fill text-sm-center nav-link">Disabled</a>
+        </nav>
+        
+        
+        <!--feedback-->
+
+    <h2>FEED BACK FORM</h2>    
+    <div class="container">    
+      <form>    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="fname">First Name</label>    
+          </div>    
+          <div class="col-75">    
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">    
+          </div>    
         </div>    
-        <div class="col-75">    
-          <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="lname">Last Name</label>    
+          </div>    
+          <div class="col-75">    
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">    
+          </div>    
         </div>    
-      </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="country">Country</label>    
-      </div>    
-      <div class="col-75">    
-        <select id="country" name="country">    
-            <option value="none">Select Country</option>    
-          <option value="Malaysia">Malaysia</option>    
-          <option value="canada">Canada</option>    
-          <option value="usa">USA</option>    
-          <option value="russia">Russia</option>    
-          <option value="japan">Japan</option>    
-          <option value="india">India</option>    
-          <option value="china">China</option>    
-        </select>    
-      </div>    
-    </div>    
-    <div class="row">    
-      <div class="col-25">    
-        <label for="feed_back">Feed Back</label>    
-      </div>    
-      <div class="col-75">    
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
-      </div>    
-    </div>    
-    <div class="row">    
-      <input type="submit" value="Submit">    
-    </div>    
-  </form>    
-</div>    
-    
-</body>    
-</html>    
+        <div class="row">    
+            <div class="col-25">    
+              <label for="email">Mail Id</label>    
+            </div>    
+            <div class="col-75">    
+              <input type="email" id="email" name="mailid" placeholder="Your mail id..">    
+            </div>    
+          </div>    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="country">Country</label>    
+          </div>    
+          <div class="col-75">    
+            <select id="country" name="country">    
+                <option value="none">Select Country</option>    
+              <option value="australia">Australia</option>    
+              <option value="canada">Canada</option>    
+              <option value="usa">USA</option>    
+              <option value="russia">Russia</option>    
+              <option value="japan">Japan</option>    
+              <option value="india">India</option>    
+              <option value="china">China</option>    
+            </select>    
+          </div>    
+        </div>    
+        <div class="row">    
+          <div class="col-25">    
+            <label for="feed_back">Feed Back</label>    
+          </div>    
+          <div class="col-75">    
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>    
+          </div>    
+        </div>    
+        <div class="row">    
+          <input type="submit" value="Submit">    
+        </div>    
+      </form>    
+    </div> 
