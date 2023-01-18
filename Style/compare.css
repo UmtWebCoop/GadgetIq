@@ -1,0 +1,61 @@
+.d-flex {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.d-flex a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-link {
+    color: black;
+    font-family: 'Anton', sans-serif;
+}
+
+.nav a:active {
+    color: red;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.nav-link:hover {
+    background-color: rgb(21, 72, 174);
+    color: white;
+}
+
+.p-2 a:active {
+    color: blue;
+}
+
+
+body {
+    background-color: rgb(241, 241, 237);
+}
+
+footer ul li {
+    list-style: none;
+
+}
+
+footer {
+    background-color: rgb(151, 151, 151);
+    position: relative;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.compare {
+    position: absolute;
+    top: 40%;
+    left: 1%;
+    right: 1%;
+}
