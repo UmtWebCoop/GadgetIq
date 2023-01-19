@@ -39,14 +39,29 @@
     <!--NAvbar-->
 
     <nav class="nav nav-pills flex-column flex-sm-row" style="background-color: rgb(76, 111, 182);">
-        <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="index.html"><span class="material-symbols-outlined">
-            home
-            </span></a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="content.html">Content</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="feedback.html">Feedback</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="compare.html">Compare</a>
-    </nav>
+      <div class="flex-sm-fill text-sm-center nav-link">
+          <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="index.html"><span class="material-symbols-outlined">
+              home
+              </span></a>
+      </div>
+      
+      <div class="flex-sm-fill text-sm-center nav-link dropdown">
+          <a class="flex-sm-fill text-sm-center nav-link">Content</a>
+          <div class="flex-sm-fill text-sm-center nav-link dropdown-content">
+              <a href="content.html">Laptop</a>
+              <a href="phone.html">Phone</a>
+          </div>
+          </div>
+      <div class="flex-sm-fill text-sm-center nav-link">
+          <a class="flex-sm-fill text-sm-center nav-link" href="about.html">About</a>
+      </div>
+      <div class="flex-sm-fill text-sm-center nav-link">
+          <a class="flex-sm-fill text-sm-center nav-link" href="feedback.html">Feedback</a>
+      </div>
+      <div class="flex-sm-fill text-sm-center nav-link">
+          <a class="flex-sm-fill text-sm-center nav-link" href="compare.html">Compare</a>
+      </div>
+  </nav>
 
 
 <!--content-->     
