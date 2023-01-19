@@ -53,11 +53,12 @@ body {
 
 footer ul li {
     list-style: none;
-
+    color: white;
 }
-
+footer ul li a , footer p{
+    color: white;
+}
 footer {
-    background-color: rgb(151, 151, 151);
     position: relative;
     bottom: 0;
     right: 0;
